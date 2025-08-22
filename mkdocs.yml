@@ -1,0 +1,20 @@
+site_name: LLM Agents Hub
+site_description: Curated resources on LLM-based agents.
+site_url: https://RafiullahOmar.github.io/llm-agents-hub/
+repo_url: https://github.com/RafiullahOmar/llm-agents-hub
+repo_name: llm-agents-hub
+
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+  - Taxonomy: taxonomy.md
+  - Articles & Surveys: articles.md
+  - Benchmarks: benchmarks.md
+  - Repos & Frameworks: repos.md
+  - Industry Case Studies: case-studies.md
+  - Conferences & Workshops: conferences.md
+  - Videos & Talks: videos.md
+  - Datasets: datasets.md
+  - Newsletters: newsletters.md
