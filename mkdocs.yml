@@ -7,8 +7,8 @@ repo_name: llm-agents-hub
 theme:
   name: material
 
-extra_javascript:
-  - assets/sheet-refresh.js
+#extra_javascript:
+#  - assets/sheet-refresh.js
 
 nav:
   - Home: index.md
