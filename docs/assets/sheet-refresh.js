@@ -1,17 +1,15 @@
-<script>
 (function () {
   function refresh() {
     document.querySelectorAll('iframe[data-google-sheet]').forEach((el) => {
-      const src = el.getAttribute('data-src') || el.src;
-      const u = new URL(src);
+      const base = el.getAttribute('data-src') || el.src;
+      const u = new URL(base);
       u.searchParams.set('cachebust', Date.now());
       el.src = u.toString();
     });
   }
-  // Works with MkDocs Material's instant navigation if present
+  // Support MkDocs Material instant navigation
   if (window.document$ && typeof window.document$.subscribe === 'function') {
     window.document$.subscribe(refresh);
   }
   window.addEventListener('load', refresh);
 })();
-</script>
