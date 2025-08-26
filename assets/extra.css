@@ -1,0 +1,6 @@
+/* Reduce iframe height on small screens */
+@media (max-width: 768px) {
+  iframe[title="LLM Agents Hub — Live Google Sheet"] {
+    height: 600px;
+  }
+}
