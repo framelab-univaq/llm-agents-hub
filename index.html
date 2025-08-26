@@ -483,12 +483,30 @@
 
 
 <h1 id="llm-agents-hub">LLM Agents Hub</h1>
+<!-- Google Sheet embed (auto-refreshes to bypass cache) -->
 <p><iframe
-  src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQXMjW8HGzbQgIHQMXbgp_n9iaNkdLrUSjpV4X219CEMrmup2Q4t3USqBKsQrVq9LIDovTby5aRpLVQ/pubhtml?widget=true&headers=false&chrome=false"
+  data-google-sheet
+  data-src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQXMjW8HGzbQgIHQMXbgp_n9iaNkdLrUSjpV4X219CEMrmup2Q4t3USqBKsQrVq9LIDovTby5aRpLVQ/pubhtml?widget=true&headers=false&chrome=false"
   width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0"
   loading="lazy" title="LLM Agents Hub — Live Google Sheet" style="border:0;display:block">
-</iframe></p>
-<p><a class="md-button md-button--primary" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQXMjW8HGzbQgIHQMXbgp_n9iaNkdLrUSjpV4X219CEMrmup2Q4t3USqBKsQrVq9LIDovTby5aRpLVQ/pubhtml" target="_blank" rel="noopener">Open in Google Sheets</a></p>
+</iframe>
+</p>
+<script>
+(function () {
+  // Set the iframe src at runtime with a cache-busting param
+  var el = document.querySelector('iframe[data-google-sheet]');
+  if (!el) return;
+  var base = el.getAttribute('data-src');
+  try {
+    var u = new URL(base);
+    u.searchParams.set('cachebust', Date.now());
+    el.src = u.toString();
+  } catch (e) {
+    // Fallback for very old browsers
+    el.src = base + (base.indexOf('?') === -1 ? '?' : '&') + 'cachebust=' + Date.now();
+  }
+})();
+</script>
 
 
 
