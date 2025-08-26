@@ -1,7 +1,7 @@
 # LLM Agents Hub
 
 *A curated, annotated index of research and practice around LLM-based agents.*
-
+<!-- 
 <div class="quick-links">
   <a class="ql-card ql-card--primary" href="articles.md">Explore Articles</a>
   <a class="ql-card" href="benchmarks.md">Benchmarks</a>
@@ -12,7 +12,7 @@
   <a class="ql-card" href="datasets.md">Datasets</a>
   <a class="ql-card" href="newsletters.md">Newsletters</a>
 </div>
-
+-->
 
 ---
 
