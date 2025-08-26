@@ -4,6 +4,15 @@ site_url: https://RafiullahOmar.github.io/llm-agents-hub/
 repo_url: https://github.com/RafiullahOmar/llm-agents-hub
 repo_name: llm-agents-hub
 
+markdown_extensions:
+  - attr_list
+  - toc:
+      permalink: true
+  - admonition
+  - tables
+  - footnotes
+  - def_list
+
 theme:
   name: material
   logo: assets/header-logo.png   # file at docs/assets/header-logo.png
