@@ -1,0 +1,54 @@
+{
+  "updated": "",
+  "feeds": [
+    {
+      "name": "Latent Space",
+      "home": "https://www.latent.space/",
+      "rss": "https://www.latent.space/feed.xml",
+      "desc": "AI engineering newsletter + podcast.",
+      "latest": []
+    },
+    {
+      "name": "Ben's Bites",
+      "home": "https://www.bensbites.com/",
+      "rss": "https://www.bensbites.com/feed.xml",
+      "desc": "Daily practical AI updates.",
+      "latest": []
+    },
+    {
+      "name": "The Rundown AI",
+      "home": "https://www.therundown.ai/",
+      "rss": "https://www.therundown.ai/feed",
+      "desc": "Daily news and why it matters.",
+      "latest": []
+    },
+    {
+      "name": "The Batch (DeepLearning.AI)",
+      "home": "https://www.deeplearning.ai/the-batch/",
+      "rss": "https://www.deeplearning.ai/the-batch/feed/",
+      "desc": "Weekly analysis & industry updates.",
+      "latest": []
+    },
+    {
+      "name": "Import AI",
+      "home": "https://importai.substack.com/",
+      "rss": "https://importai.substack.com/feed",
+      "desc": "Jack Clark’s research/news commentary.",
+      "latest": []
+    },
+    {
+      "name": "DAIR.AI",
+      "home": "https://nlp.elvissaravia.com/",
+      "rss": "https://nlp.elvissaravia.com/feed",
+      "desc": "Trends, papers, and guides; agents weekly.",
+      "latest": []
+    },
+    {
+      "name": "TLDR AI",
+      "home": "https://tldr.tech/ai",
+      "rss": "https://tldr.tech/ai/rss",
+      "desc": "Byte-sized daily digest for practitioners.",
+      "latest": []
+    }
+  ]
+}
