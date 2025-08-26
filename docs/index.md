@@ -2,14 +2,17 @@
 
 *A curated, annotated index of research and practice around LLM-based agents.*
 
-[Explore Articles](articles.md){:.md-button .md-button--primary}
-[Benchmarks](benchmarks.md){:.md-button}
-[Repos & Frameworks](repos.md){:.md-button}
-[Case Studies](case-studies.md){:.md-button}
-[Conferences](conferences.md){:.md-button}
-[Videos](videos.md){:.md-button}
-[Datasets](datasets.md){:.md-button}
-[Newsletters](newsletters.md){:.md-button}
+<div class="quick-links">
+  <a class="ql-card ql-card--primary" href="articles.md">Explore Articles</a>
+  <a class="ql-card" href="benchmarks.md">Benchmarks</a>
+  <a class="ql-card" href="repos.md">Repos &amp; Frameworks</a>
+  <a class="ql-card" href="case-studies.md">Case Studies</a>
+  <a class="ql-card" href="conferences.md">Conferences</a>
+  <a class="ql-card" href="videos.md">Videos</a>
+  <a class="ql-card" href="datasets.md">Datasets</a>
+  <a class="ql-card" href="newsletters.md">Newsletters</a>
+</div>
+
 
 ---
 
