@@ -6,20 +6,11 @@ repo_name: llm-agents-hub
 
 theme:
   name: material
-
-#extra_javascript:
-#  - assets/sheet-refresh.js
+  logo: assets/header-logo.png   # file at docs/assets/header-logo.png
 
 extra_css:
   - assets/extra.css
-
-theme:
-  name: material
-  logo: assets/header-logo.png   # or .svg
-
-extra_css:
-  - assets/header.css
-
+  - assets/header.css            # optional, if you want size tweaks
 
 nav:
   - Home: index.md
@@ -32,4 +23,3 @@ nav:
   - Videos & Talks: videos.md
   - Datasets: datasets.md
   - Newsletters: newsletters.md
-  
