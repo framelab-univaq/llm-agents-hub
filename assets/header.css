@@ -1,0 +1,9 @@
+/* Keep logo nicely sized in the header */
+.md-header__button.md-logo img { height: 28px; }
+
+/* Optional: swap to a dark version automatically (if you have one) */
+@media (prefers-color-scheme: dark) {
+  .md-header__button.md-logo img {
+    content: url(header-logo-dark.png); /* put a dark logo file in docs/assets/ */
+  }
+}
