@@ -4,9 +4,6 @@ site_url: https://RafiullahOmar.github.io/llm-agents-hub/
 repo_url: https://github.com/RafiullahOmar/llm-agents-hub
 repo_name: llm-agents-hub
 
-extra_javascript:
-  - assets/header-link.js
-
 markdown_extensions:
   - attr_list
   - toc:
