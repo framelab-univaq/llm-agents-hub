@@ -17,10 +17,3 @@ A curated set of evaluation suites for **LLM-based agents**. These focus on goal
 
 ---
 
-## How to contribute a benchmark
-
-1. Add a one-line description (what capability it tests).  
-2. Link to the official site or GitHub.  
-3. If there’s a leaderboard or standard metric, note it briefly (e.g., “pass@k, task success”).  
-4. Prefer **public, reproducible** suites (datasets and scripts available).
-
