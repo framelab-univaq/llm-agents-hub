@@ -49,31 +49,6 @@ We welcome PRs and suggestions—especially with a short note on *why it matters
 
 ---
 
-## Live index (auto-updates)
-
-Below is a live view connected to our public spreadsheet. Edits to the sheet appear here automatically.
-
-<iframe
-  data-google-sheet
-  data-src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQXMjW8HGzbQgIHQMXbgp_n9iaNkdLrUSjpV4X219CEMrmup2Q4t3USqBKsQrVq9LIDovTby5aRpLVQ/pubhtml?widget=true&headers=false&chrome=false"
-  width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0"
-  loading="lazy" title="LLM Agents Hub — Live Google Sheet" style="border:0;display:block">
-</iframe>
-
-<script>
-(function () {
-  var el = document.querySelector('iframe[data-google-sheet]');
-  if (!el) return;
-  var base = el.getAttribute('data-src');
-  try { var u = new URL(base); u.searchParams.set('cachebust', Date.now()); el.src = u.toString(); }
-  catch (e) { el.src = base + (base.indexOf('?') === -1 ? '?' : '&') + 'cachebust=' + Date.now(); }
-})();
-</script>
-
-<p><a class="md-button" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQXMjW8HGzbQgIHQMXbgp_n9iaNkdLrUSjpV4X219CEMrmup2Q4t3USqBKsQrVq9LIDovTby5aRpLVQ/pubhtml" target="_blank" rel="noopener">Open in Google Sheets</a></p>
-
----
-
 ## Curation principles
 
 - **Quality over quantity** — avoid duplicates and marketing-only content.  
