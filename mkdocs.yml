@@ -25,9 +25,10 @@ extra_css:
 nav:
   - Home: index.md
   - Taxonomy: taxonomy.md
+  - Frameworks:frameworks.md
   - Research Papers: articles.md
   - Benchmarks: benchmarks.md
-  - Repos & Frameworks: repos.md
+  - Repos: repos.md
   - Industry Case Studies: case-studies.md
   - Conferences & Workshops: conferences.md
   - Videos & Talks: videos.md
