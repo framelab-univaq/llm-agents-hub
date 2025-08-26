@@ -1,0 +1,31 @@
+#nl-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 14px;
+  margin: 8px 0 18px;
+}
+
+.nl-card {
+  border: 1px solid var(--md-default-fg-color--lighter, #e0e0e0);
+  border-radius: 12px;
+  padding: 14px;
+  background: var(--md-default-bg-color);
+  box-shadow: 0 1px 2px rgba(0,0,0,.04);
+}
+
+.nl-title {
+  display: flex; justify-content: space-between; align-items: baseline;
+  font-weight: 700; margin: 0 0 8px 0;
+}
+.nl-title a { text-decoration: none; }
+
+.nl-desc { margin: 0 0 10px 0; color: var(--md-default-fg-color); }
+
+.nl-links a {
+  font-size: .9rem; margin-right: .75rem; text-decoration: none;
+}
+.nl-links a:hover { text-decoration: underline; }
+
+.nl-posts { margin: 8px 0 0 0; padding-left: 18px; }
+.nl-posts li { margin-bottom: 4px; }
+.nl-posts time { opacity: .75; font-size: .85em; margin-left: .35rem; }
