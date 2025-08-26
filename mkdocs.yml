@@ -20,6 +20,7 @@ theme:
 extra_css:
   - assets/extra.css
   - assets/header.css            # optional, if you want size tweaks
+  - assets/home.css 
 
 nav:
   - Home: index.md
