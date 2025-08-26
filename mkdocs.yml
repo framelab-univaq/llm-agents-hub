@@ -21,6 +21,11 @@ extra_css:
   - assets/extra.css
   - assets/header.css            # optional, if you want size tweaks
   - assets/home.css 
+  - assets/newsletters.css
+
+extra_javascript:
+  - assets/newsletters.js
+
 
 nav:
   - Home: index.md
