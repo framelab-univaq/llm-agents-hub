@@ -13,6 +13,13 @@ theme:
 extra_css:
   - assets/extra.css
 
+theme:
+  name: material
+  logo: assets/header-logo.png   # or .svg
+
+extra_css:
+  - assets/header.css
+
 
 nav:
   - Home: index.md
