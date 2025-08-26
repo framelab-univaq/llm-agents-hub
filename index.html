@@ -47,6 +47,8 @@
     
       <link rel="stylesheet" href="assets/extra.css">
     
+      <link rel="stylesheet" href="assets/header.css">
+    
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -84,8 +86,7 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="." title="LLM Agents Hub" class="md-header__button md-logo" aria-label="LLM Agents Hub" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="assets/header-logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -194,8 +195,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="." title="LLM Agents Hub" class="md-nav__button md-logo" aria-label="LLM Agents Hub" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="assets/header-logo.png" alt="logo">
 
     </a>
     LLM Agents Hub
@@ -631,8 +631,7 @@
 
 
 <h1 id="llm-agents-hub">LLM Agents Hub</h1>
-<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-<em>A curated, annotated index of research and practice around LLM-based agents.</em></p>
+<p><em>A curated, annotated index of research and practice around LLM-based agents.</em></p>
 <p><a href="articles/">Explore Articles</a>{ .md-button .md-button--primary }
 <a href="benchmarks/">Benchmarks</a>{ .md-button }
 <a href="repos/">Repos &amp; Frameworks</a>{ .md-button }
@@ -669,23 +668,6 @@ Our goal is to track high-signal, peer-reviewed and practitioner resources on ag
 <hr />
 <h2 id="live-index-auto-updates">Live index (auto-updates)</h2>
 <p>Below is a live view connected to our public spreadsheet. Edits to the sheet appear here automatically.</p>
-<p>=======</p>
-<!-- Google Sheet embed (auto-refreshes to bypass cache) -->
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>3cb7cb6 (Add cache-busted Google Sheet embed)</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
 <p><iframe
   data-google-sheet
   data-src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQXMjW8HGzbQgIHQMXbgp_n9iaNkdLrUSjpV4X219CEMrmup2Q4t3USqBKsQrVq9LIDovTby5aRpLVQ/pubhtml?widget=true&headers=false&chrome=false"
@@ -695,7 +677,6 @@ Our goal is to track high-signal, peer-reviewed and practitioner resources on ag
 </p>
 <script>
 (function () {
-<<<<<<< HEAD
   var el = document.querySelector('iframe[data-google-sheet]');
   if (!el) return;
   var base = el.getAttribute('data-src');
@@ -719,38 +700,8 @@ Our goal is to track high-signal, peer-reviewed and practitioner resources on ag
 <ul>
 <li>✅ Basic taxonomy and section stubs  </li>
 <li>✅ Live spreadsheet integration  </li>
-<li>
-<h1 id="seed-each">⏳ Seed each</h1>
-  // Set the iframe src at runtime with a cache-busting param
-  var el = document.querySelector('iframe[data-google-sheet]');
-  if (!el) return;
-  var base = el.getAttribute('data-src');
-  try {
-    var u = new URL(base);
-    u.searchParams.set('cachebust', Date.now());
-    el.src = u.toString();
-  } catch (e) {
-    // Fallback for very old browsers
-    el.src = base + (base.indexOf('?') === -1 ? '?' : '&amp;') + 'cachebust=' + Date.now();
-  }
-})();
-</script></li>
+<li>⏳ Seed each</li>
 </ul>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>3cb7cb6 (Add cache-busted Google Sheet embed)</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
 
 
 
