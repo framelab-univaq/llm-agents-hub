@@ -1,0 +1,35 @@
+name: Update Newsletters JSON
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 */12 * * *"  # every ~12 hours
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install feedparser
+
+      - name: Fetch feeds
+        run: python scripts/fetch_newsletters.py
+
+      - name: Commit changes
+        run: |
+          if git diff --quiet; then
+            echo "No changes"
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add docs/data/newsletters.json
+            git commit -m "chore: update newsletters.json"
+            git push
+          fi
