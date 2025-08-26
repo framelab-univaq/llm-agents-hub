@@ -2,14 +2,14 @@
 
 *A curated, annotated index of research and practice around LLM-based agents.*
 
-[Explore Articles](articles.md){ .md-button .md-button--primary }
-[Benchmarks](benchmarks.md){ .md-button }
-[Repos & Frameworks](repos.md){ .md-button }
-[Case Studies](case-studies.md){ .md-button }
-[Conferences](conferences.md){ .md-button }
-[Videos](videos.md){ .md-button }
-[Datasets](datasets.md){ .md-button }
-[Newsletters](newsletters.md){ .md-button }
+[Explore Articles](articles.md){:.md-button .md-button--primary}
+[Benchmarks](benchmarks.md){:.md-button}
+[Repos & Frameworks](repos.md){:.md-button}
+[Case Studies](case-studies.md){:.md-button}
+[Conferences](conferences.md){:.md-button}
+[Videos](videos.md){:.md-button}
+[Datasets](datasets.md){:.md-button}
+[Newsletters](newsletters.md){:.md-button}
 
 ---
 
