@@ -30,7 +30,7 @@ extra_javascript:
 nav:
   - Home: index.md
   - Taxonomy: taxonomy.md
-  - Frameworks:frameworks.md
+  - Frameworks: frameworks.md
   - Research Papers: articles.md
   - Benchmarks: benchmarks.md
   - Repos: repos.md
