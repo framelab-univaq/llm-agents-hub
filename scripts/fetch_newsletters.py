@@ -1,23 +1,25 @@
 import json, os, time, feedparser
 from datetime import datetime, timezone
 
-# Where the JSON lives in the site
 OUT_PATH = "docs/data/newsletters.json"
 
-# Load existing file (to keep names/descriptions)
-with open(OUT_PATH, "r", encoding="utf-8") as f:
-    data = json.load(f)
+# Load existing JSON (keeps names/descriptions); make a minimal one if missing
+if os.path.exists(OUT_PATH):
+    with open(OUT_PATH, "r", encoding="utf-8") as f:
+        data = json.load(f)
+else:
+    data = {"updated": "", "feeds": []}
 
-updated_feeds = []
 headers = {"User-Agent": "framelab-newsletters-bot/1.0 (+github-actions)"}
 
 def best_date(entry):
     for k in ("published_parsed", "updated_parsed"):
         t = entry.get(k)
-        if t:  # time.struct_time
+        if t:
             return time.strftime("%Y-%m-%dT%H:%M:%SZ", t)
     return ""
 
+updated_feeds = []
 for f in data.get("feeds", []):
     rss = f.get("rss")
     latest = []
@@ -32,11 +34,7 @@ for f in data.get("feeds", []):
     f["latest"] = latest[:3]
     updated_feeds.append(f)
 
-out = {
-    "updated": datetime.now(timezone.utc).isoformat(),
-    "feeds": updated_feeds
-}
-
+out = {"updated": datetime.now(timezone.utc).isoformat(), "feeds": updated_feeds}
 os.makedirs(os.path.dirname(OUT_PATH), exist_ok=True)
 with open(OUT_PATH, "w", encoding="utf-8") as f:
     json.dump(out, f, ensure_ascii=False, indent=2)

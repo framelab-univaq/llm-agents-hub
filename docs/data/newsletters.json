@@ -1,19 +1,51 @@
 {
-  "updated": "",
+  "updated": "2025-08-27T00:06:40.004977+00:00",
   "feeds": [
     {
       "name": "Latent Space",
       "home": "https://www.latent.space/",
       "rss": "https://www.latent.space/feed.xml",
       "desc": "AI engineering newsletter + podcast.",
-      "latest": []
+      "latest": [
+        {
+          "title": "\"RAG is Dead, Context Engineering is King\" — with Jeff Huber of Chroma",
+          "url": "https://www.latent.space/p/chroma",
+          "date": "2025-08-19T21:18:21Z"
+        },
+        {
+          "title": "Can coding agents self-improve?",
+          "url": "https://www.latent.space/p/self-improving",
+          "date": "2025-08-09T19:17:56Z"
+        },
+        {
+          "title": "GPT-5's Vision Checkup: a frontier VLM, but not a new SOTA",
+          "url": "https://www.latent.space/p/gpt5-vision",
+          "date": "2025-08-07T21:36:49Z"
+        }
+      ]
     },
     {
       "name": "Ben's Bites",
       "home": "https://www.bensbites.com/",
       "rss": "https://www.bensbites.com/feed.xml",
       "desc": "Daily practical AI updates.",
-      "latest": []
+      "latest": [
+        {
+          "title": "Backend in a box",
+          "url": "https://www.bensbites.com/p/backend-in-a-box",
+          "date": "2025-08-26T13:03:56Z"
+        },
+        {
+          "title": "Let AI point it out",
+          "url": "https://www.bensbites.com/p/let-ai-point-it-out",
+          "date": "2025-08-21T13:03:12Z"
+        },
+        {
+          "title": "The future looks like this",
+          "url": "https://www.bensbites.com/p/the-future-looks-like-this",
+          "date": "2025-08-19T13:07:42Z"
+        }
+      ]
     },
     {
       "name": "The Rundown AI",
@@ -41,7 +73,23 @@
       "home": "https://nlp.elvissaravia.com/",
       "rss": "https://nlp.elvissaravia.com/feed",
       "desc": "Trends, papers, and guides; agents weekly.",
-      "latest": []
+      "latest": [
+        {
+          "title": "🥇Top AI Papers of the Week",
+          "url": "https://nlp.elvissaravia.com/p/top-ai-papers-of-the-week-943",
+          "date": "2025-08-24T15:49:37Z"
+        },
+        {
+          "title": "🤖 Agents Weekly: DeepSeek-V3.1, AGENTS.md, URL Context, Context Engineering Tips, Qwen-Image-Edit",
+          "url": "https://nlp.elvissaravia.com/p/agents-weekly-deepseek-v31-agentsmd",
+          "date": "2025-08-23T11:36:11Z"
+        },
+        {
+          "title": "🥇Top AI Papers of the Week",
+          "url": "https://nlp.elvissaravia.com/p/top-ai-papers-of-the-week-a3f",
+          "date": "2025-08-17T15:30:08Z"
+        }
+      ]
     },
     {
       "name": "TLDR AI",
