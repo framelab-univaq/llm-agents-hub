@@ -1,12 +1,39 @@
-/* Keep logo nicely sized in the header */
-.md-header__button.md-logo img { height: 28px; }
+/* Bigger navbar logo (keeps aspect ratio) */
+.md-header__button.md-logo img {
+  height: 48px;      /* try 40–56px */
+  width: auto;       /* keep proportions */
+}
 
-/* Optional: swap to a dark version automatically (if you have one) */
+/* Make the header a bit taller so the larger logo fits nicely */
+.md-header__inner { min-height: 64px; }
+
+/* Mobile: slightly smaller */
+@media (max-width: 600px) {
+  .md-header__button.md-logo img { height: 36px; }
+}
+
+/* Optional: dark-mode logo variant (put the file in docs/assets/) */
 @media (prefers-color-scheme: dark) {
   .md-header__button.md-logo img {
-    content: url(header-logo-dark.png); /* put a dark logo file in docs/assets/ */
+    /* only if you have this file */
+    /* content: url('header-logo1-dark.png'); */
   }
 }
 
 
 
+
+
+/* Keep logo nicely sized in the header */
+/*
+.md-header__button.md-logo img { height: 28px; }
+*/
+/* Optional: swap to a dark version automatically (if you have one) */
+
+/*
+@media (prefers-color-scheme: dark) {
+  .md-header__button.md-logo img {
+    content: url(header-logo-dark.png); /* put a dark logo file in docs/assets/ */
+  }
+}
+*/
