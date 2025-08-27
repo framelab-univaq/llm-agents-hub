@@ -7,3 +7,11 @@
     content: url(header-logo-dark.png); /* put a dark logo file in docs/assets/ */
   }
 }
+
+
+/* Make the inner header container full-width */
+.md-header__inner {
+  max-width: 100% !important;   /* override Material's container width */
+  padding-left: 16px;
+  padding-right: 16px;
+}
