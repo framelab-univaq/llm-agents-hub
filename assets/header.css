@@ -9,9 +9,4 @@
 }
 
 
-:root { --header-max: 90rem; }   /* tweak this value */
-
-.md-header__inner {
-  max-width: var(--header-max) !important;
-}
 
