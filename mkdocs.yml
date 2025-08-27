@@ -15,7 +15,7 @@ markdown_extensions:
 
 theme:
   name: material
-  logo: assets/header-logo1.png   # file at docs/assets/header-logo.png
+  logo: assets/header-logo2.png   # file at docs/assets/header-logo.png
 
 extra_css:
   - assets/extra.css
