@@ -16,6 +16,8 @@ markdown_extensions:
 theme:
   name: material
   logo: assets/header-logo1.png   # file at docs/assets/header-logo.png
+  favicon: assets/favicon.png
+
 
 extra_css:
   - assets/extra.css
