@@ -1,5 +1,41 @@
 # LLM Agents Hub
 
+<div class="hero-banner">
+  <div class="hero-content">
+    <div class="hero-title">Framelab · LLM Agents Hub</div>
+    <p class="hero-sub">Curated research & practice on agentic LLMs — planning, tools, multi-agent, evaluation, and production.</p>
+
+    <div class="tile-row">
+      <a class="tile" href="articles/">
+        <img src="assets/icon-articles.svg" alt="" onerror="this.remove()"/> <b>Articles</b>
+      </a>
+      <a class="tile" href="benchmarks/">
+        <img src="assets/icon-benchmarks.svg" alt="" onerror="this.remove()"/> <b>Benchmarks</b>
+      </a>
+      <a class="tile" href="repos/">
+        <img src="assets/icon-frameworks.svg" alt="" onerror="this.remove()"/> <b>Frameworks</b>
+      </a>
+      <a class="tile" href="agent-systems/">
+        <img src="assets/icon-agents.svg" alt="" onerror="this.remove()"/> <b>Agent Systems</b>
+      </a>
+      <a class="tile" href="datasets/">
+        <img src="assets/icon-datasets.svg" alt="" onerror="this.remove()"/> <b>Datasets</b>
+      </a>
+      <a class="tile" href="videos/">
+        <img src="assets/icon-videos.svg" alt="" onerror="this.remove()"/> <b>Videos</b>
+      </a>
+      <a class="tile" href="conferences/">
+        <img src="assets/icon-conferences.svg" alt="" onerror="this.remove()"/> <b>Conferences</b>
+      </a>
+      <a class="tile" href="newsletters/">
+        <img src="assets/icon-newsletters.svg" alt="" onerror="this.remove()"/> <b>Newsletters</b>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
 *A curated, annotated index of research and practice around LLM-based agents.*
 <!-- 
 <div class="quick-links">
