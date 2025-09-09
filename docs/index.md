@@ -1,8 +1,8 @@
+cat > docs/index.md <<'EOF'
 # LLM Agents Hub
 
 <!-- Team banner directly under header -->
 <div class="team-hero">
-  <!-- Use your existing photo file; change name if needed -->
   <img src="assets/teamphoto.jpeg" alt="Framelab team">
 </div>
 
@@ -70,3 +70,4 @@ We welcome PRs and suggestions—especially with a short note on *why it matters
 - ✅ Basic taxonomy and section stubs  
 - ✅ Live spreadsheet integration  
 - ⏳ Seed each section with annotated examples
+EOF
