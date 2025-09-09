@@ -1,35 +1,5 @@
-/* Responsive cards for (optional) legacy quick links */
-.quick-links {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 12px;
-  margin: 0 0 1rem 0;
-}
-.ql-card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 14px 16px;
-  border-radius: 12px;
-  text-decoration: none;
-  font-weight: 700;
-  border: 1px solid var(--md-typeset-table-color, #e0e0e0);
-  background: var(--md-default-bg-color);
-  color: var(--md-default-fg-color);
-  box-shadow: 0 1px 2px rgba(0,0,0,.04);
-  transition: transform .06s ease, box-shadow .2s ease, background .2s ease;
-}
-.ql-card:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 6px 16px rgba(0,0,0,.08);
-}
-.ql-card--primary {
-  background: var(--md-primary-fg-color);
-  color: var(--md-primary-bg-color, #fff);
-  border-color: var(--md-primary-fg-color);
-}
-
-/* ===== NEW: Team photo banner ===== */
+cat > docs/assets/home.css <<'EOF'
+/* ===== Team photo banner ===== */
 .team-hero {
   margin: 8px 0 14px;
   border-radius: 16px;
@@ -42,7 +12,7 @@
   height: auto;
 }
 
-/* ===== NEW: Horizontal section menu (pills) ===== */
+/* ===== Horizontal section menu (pills) ===== */
 .section-menu {
   display: flex;
   flex-wrap: wrap;
@@ -74,5 +44,4 @@
 @media (max-width: 680px) {
   .section-menu a { padding: 9px 12px; }
 }
-
-/* (Old hero/tile styles removed) */
+EOF
