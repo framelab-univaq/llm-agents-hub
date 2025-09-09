@@ -1,54 +1,24 @@
 # LLM Agents Hub
 
-<div class="hero-banner">
-  <div class="hero-content">
-    <div class="hero-title">Framelab · LLM Agents Hub</div>
-    <p class="hero-sub">Curated research & practice on agentic LLMs — planning, tools, multi-agent, evaluation, and production.</p>
-
-    <div class="tile-row">
-      <a class="tile" href="articles/">
-        <img src="assets/icon-articles.svg" alt="" onerror="this.remove()"/> <b>Articles</b>
-      </a>
-      <a class="tile" href="benchmarks/">
-        <img src="assets/icon-benchmarks.svg" alt="" onerror="this.remove()"/> <b>Benchmarks</b>
-      </a>
-      <a class="tile" href="repos/">
-        <img src="assets/icon-frameworks.svg" alt="" onerror="this.remove()"/> <b>Frameworks</b>
-      </a>
-      <a class="tile" href="agent-systems/">
-        <img src="assets/icon-agents.svg" alt="" onerror="this.remove()"/> <b>Agent Systems</b>
-      </a>
-      <a class="tile" href="datasets/">
-        <img src="assets/icon-datasets.svg" alt="" onerror="this.remove()"/> <b>Datasets</b>
-      </a>
-      <a class="tile" href="videos/">
-        <img src="assets/icon-videos.svg" alt="" onerror="this.remove()"/> <b>Videos</b>
-      </a>
-      <a class="tile" href="conferences/">
-        <img src="assets/icon-conferences.svg" alt="" onerror="this.remove()"/> <b>Conferences</b>
-      </a>
-      <a class="tile" href="newsletters/">
-        <img src="assets/icon-newsletters.svg" alt="" onerror="this.remove()"/> <b>Newsletters</b>
-      </a>
-    </div>
-  </div>
+<!-- Team banner directly under header -->
+<div class="team-hero">
+  <!-- Use your existing photo file; change name if needed -->
+  <img src="assets/teamphoto.jpeg" alt="Framelab team">
 </div>
 
-
+<!-- Horizontal menu with 8 sections -->
+<nav class="section-menu" aria-label="Sections">
+  <a href="articles/">📄 Articles</a>
+  <a href="benchmarks/">📊 Benchmarks</a>
+  <a href="frameworks/">🧰 Frameworks</a>
+  <a href="repos/">🧱 Repos</a>
+  <a href="datasets/">🗂️ Datasets</a>
+  <a href="videos/">🎥 Videos</a>
+  <a href="conferences/">🎓 Conferences</a>
+  <a href="newsletters/">📰 Newsletters</a>
+</nav>
 
 *A curated, annotated index of research and practice around LLM-based agents.*
-<!-- 
-<div class="quick-links">
-  <a class="ql-card ql-card--primary" href="articles.md">Explore Articles</a>
-  <a class="ql-card" href="benchmarks.md">Benchmarks</a>
-  <a class="ql-card" href="repos.md">Repos &amp; Frameworks</a>
-  <a class="ql-card" href="case-studies.md">Case Studies</a>
-  <a class="ql-card" href="conferences.md">Conferences</a>
-  <a class="ql-card" href="videos.md">Videos</a>
-  <a class="ql-card" href="datasets.md">Datasets</a>
-  <a class="ql-card" href="newsletters.md">Newsletters</a>
-</div>
--->
 
 ---
 
@@ -65,7 +35,8 @@ Our goal is to track high-signal, peer-reviewed and practitioner resources on ag
 
 - **Articles & Surveys** — seminal and state-of-the-art papers with 1–2 line annotations. → [Browse](articles.md)
 - **Benchmarks** — evaluation suites and leaderboards for agent capabilities. → [Browse](benchmarks.md)
-- **Repos & Frameworks** — libraries and reference implementations for building agents. → [Browse](repos.md)
+- **Frameworks** — libraries for building agent systems. → [Browse](frameworks.md)
+- **Repos** — reference implementations and example systems. → [Browse](repos.md)
 - **Industry Case Studies** — deployments, postmortems, and best practices. → [Browse](case-studies.md)
 - **Conferences & Workshops** — venues and recurring events relevant to agentic AI. → [Browse](conferences.md)
 - **Videos & Talks** — keynotes, tutorials, and deep dives. → [Browse](videos.md)
@@ -98,4 +69,4 @@ We welcome PRs and suggestions—especially with a short note on *why it matters
 
 - ✅ Basic taxonomy and section stubs  
 - ✅ Live spreadsheet integration  
-- ⏳ Seed each
+- ⏳ Seed each section with annotated examples
