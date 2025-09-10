@@ -1,23 +1,24 @@
-/* ---------- Homepage-only base tweaks ---------- */
-.home .md-content__inner > h1:first-child { display: none; }  /* hide auto page title */
-.home .md-sidebar--secondary { display: none; }               /* hide right-hand ToC */
+/* Homepage-only base tweaks */
+.home .md-content__inner > h1:first-child { display: none; } /* hide auto page title */
+.home .md-sidebar--secondary { display: none; }              /* hide right-hand ToC */
 .home .md-main__inner { padding-top: 0; }                     /* pull content up */
 
-/* ---------- Team photo as <img> (directly under blue header) ---------- */
+/* Team photo (directly under blue header) */
 .team-hero {
   margin: 0 0 18px;
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 1px 2px rgba(0,0,0,.06);
+  min-height: 180px; /* guard: prevents a 0-height flash if image loads slow */
 }
 .team-hero img {
   display: block;
   width: 100%;
   height: 360px;      /* adjust to taste (e.g., 300–420px) */
-  object-fit: cover;  /* nicely crops the image to the fixed height */
+  object-fit: cover;  /* crop nicely to fixed height */
 }
 
-/* ---------- Horizontal section menu (pills) ---------- */
+/* Horizontal section menu (pills) */
 .section-menu {
   display: flex;
   flex-wrap: wrap;
