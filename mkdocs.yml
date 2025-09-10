@@ -15,7 +15,7 @@ markdown_extensions:
 
 theme:
   name: material
-  custom_dir: overrides
+  custom_dir: docs/overrides
   logo: assets/header-logo1.png
   favicon: assets/favicon.png
 
