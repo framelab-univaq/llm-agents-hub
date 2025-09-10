@@ -13,5 +13,5 @@
   object-position: center;
 }
 
-/* Ensure page content starts immediately below the banner */
+/* Ensure page content starts immediately below the banner (no overlay) */
 .md-main__inner { padding-top: 0; }
