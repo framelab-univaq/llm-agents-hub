@@ -44,3 +44,6 @@ nav:
   - Datasets: datasets.md
   - Newsletters: newsletters.md
 
+
+extra:
+  announcement: " "
