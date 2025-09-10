@@ -1,26 +1,40 @@
-/* Sits right under the top header */
-.site-banner {
-  margin: 0 0 18px;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 1px 2px rgba(0,0,0,.06);
+/* docs/assets/banner.css */
+
+/* Remove the default top padding Material adds before content on all pages */
+.md-main__inner {
+  padding-top: 0;
 }
 
-/* Responsive, nicely cropped */
+/* Full-bleed banner under the header */
+.site-banner {
+  /* Make the banner span the full viewport width, ignoring the content gutters */
+  margin: 0 calc(50% - 50vw) 18px;
+  border-radius: 0;           /* match the header’s straight edges */
+  overflow: hidden;
+  box-shadow: none;           /* keep it visually continuous with the header */
+}
+
+/* Responsive height + proper cropping */
 .site-banner img {
   display: block;
-  width: 100%;
-  height: clamp(180px, 26vw, 380px);
+  width: 100vw;               /* full viewport width */
+  max-width: 100vw;
+  height: clamp(180px, 26vw, 380px);  /* adjust to taste */
   object-fit: cover;
+  object-position: center;
 }
 
-/* Optional: dark-mode alternative
+/* Optional: if you want a subtle divider between header and image */
+/*
+.site-banner {
+  box-shadow: 0 1px 0 rgba(0,0,0,.06);
+}
+*/
+
+/* Optional: dark-mode alternate image
 @media (prefers-color-scheme: dark) {
   .site-banner img {
     content: url("../assets/teamphoto-dark.jpeg");
   }
 }
 */
-
-
-
