@@ -1,10 +1,4 @@
----
-hide:
-  - toc
-  - title
----
 
-<script>document.documentElement.classList.add('home');</script>
 
 <!-- Team banner directly under the blue header -->
 <div class="team-hero">
