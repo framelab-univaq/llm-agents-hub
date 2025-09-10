@@ -1,10 +1,10 @@
-/* Render banner in the announcement bar right under the blue header */
+/* Announce area sits right under the blue header */
 .md-banner { padding: 0; background: transparent; box-shadow: none; }
 
-/* 2px gap under the header */
+/* EXACT 2px gap below the header */
 .md-banner .site-banner { margin: 2px 0 0; }
 
-/* Full-width cropped image (no overlay) */
+/* Full-width image, cropped to height */
 .md-banner .site-banner img {
   display: block;
   width: 100%;
@@ -13,5 +13,5 @@
   object-position: center;
 }
 
-/* Ensure page content starts immediately below the banner */
+/* Start page content immediately below the banner */
 .md-main__inner { padding-top: 0; }
