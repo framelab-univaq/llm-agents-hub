@@ -1,17 +1,17 @@
-/* The announce area sits directly under the header */
+/* Use the announcement bar area directly under the blue header */
 .md-banner { padding: 0; background: transparent; box-shadow: none; }
 
-/* 2px gap below the blue header */
+/* 2px gap below the header */
 .md-banner .site-banner { margin: 2px 0 0; }
 
-/* Full-width image, fixed-height crop */
+/* Full-width cropped image */
 .md-banner .site-banner img {
   display: block;
   width: 100%;
-  height: clamp(200px, 26vw, 400px);  /* adjust to taste */
+  height: clamp(200px, 26vw, 400px);
   object-fit: cover;
   object-position: center;
 }
 
-/* Ensure page content starts immediately below the banner */
+/* Ensure page content starts immediately below the banner (no overlay) */
 .md-main__inner { padding-top: 0; }
