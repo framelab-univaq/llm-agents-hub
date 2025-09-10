@@ -1,9 +1,6 @@
 
 
-<!-- Team banner directly under the blue header -->
-<div class="team-hero">
-  <img src="assets/teamphoto.jpeg" alt="Framelab team" loading="eager">
-</div>
+
 
 <!-- Horizontal menu with 8 sections -->
 <nav class="section-menu" aria-label="Sections">
