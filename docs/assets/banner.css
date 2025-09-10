@@ -9,7 +9,7 @@
 .site-banner img {
   display: block;
   width: 100%;
-  height: 170px;      /* fixed height */
+  height: 70px;      /* fixed height */
   object-fit: cover;  /* crop to fit height */
   object-position: center; /* center the crop */
 }
