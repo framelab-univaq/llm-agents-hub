@@ -1,18 +1,21 @@
-cat > docs/assets/home.css <<'EOF'
-/* ===== Team photo banner ===== */
+/* ---------- Homepage-only base tweaks ---------- */
+/* These rules only apply because index.md adds <script>…classList.add('home')</script> */
+.home .md-content__inner > h1:first-child { display: none; }  /* hide auto page title */
+.home .md-sidebar--secondary { display: none; }               /* hide right-hand ToC */
+.home .md-main__inner { padding-top: 0; }                     /* pull content up */
+
+/* ---------- Team photo hero (directly under blue header) ---------- */
 .team-hero {
-  margin: 8px 0 14px;
+  margin: 0 0 18px;
+  width: 100%;
+  height: 360px;                           /* adjust height as you like (300–420px is nice) */
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 1px 2px rgba(0,0,0,.06);
-}
-.team-hero img {
-  display: block;
-  width: 100%;
-  height: auto;
+  background: url('assets/teamphoto.jpeg') center / cover no-repeat;
 }
 
-/* ===== Horizontal section menu (pills) ===== */
+/* ---------- Horizontal section menu (pills) ---------- */
 .section-menu {
   display: flex;
   flex-wrap: wrap;
@@ -21,6 +24,7 @@ cat > docs/assets/home.css <<'EOF'
   margin: 8px 0 22px;
   padding: 6px 0;
 }
+
 .section-menu a {
   display: inline-flex;
   align-items: center;
@@ -34,6 +38,7 @@ cat > docs/assets/home.css <<'EOF'
   color: var(--md-typeset-color, inherit);
   transition: transform .06s ease, box-shadow .12s ease, background .12s ease, color .12s ease;
 }
+
 .section-menu a:hover {
   transform: translateY(-1px);
   box-shadow: 0 2px 10px rgba(0,0,0,.06);
@@ -41,7 +46,8 @@ cat > docs/assets/home.css <<'EOF'
   color: var(--md-primary-bg-color);
   border-color: var(--md-primary-fg-color);
 }
+
 @media (max-width: 680px) {
   .section-menu a { padding: 9px 12px; }
 }
-EOF
+
