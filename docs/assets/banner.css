@@ -1,52 +1,62 @@
-/* Banner sits directly under the blue header — content width */
-.site-banner {
-  margin: 2px 0 0;   /* 2px gap; remove full-bleed margins */
-  width: 100%;
-  overflow: hidden;
-}
-
-/* Image fills content width, centered crop, fixed height */
-.site-banner img {
-  display: block;
-  width: 100%;
-  height: 260px;      /* fixed height */
-  object-fit: cover;  /* crop to fit height */
-  object-position: center; /* center the crop */
-}
-
-/* Keep page content tight under banner */
-.md-main__inner { padding-top: 0; }
-
-/* Global section buttons under the banner */
-.site-banner + .section-menu--global {
-  margin: 10px auto 18px;   /* space below photo */
-  max-width: 1100px;        /* keep a nice line length; adjust if you like */
+/* -------- Global buttons (chips) under the banner -------- */
+.section-menu--global {
+  margin: 10px auto 18px;
+  max-width: 1100px;
   padding: 0 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 12px;
 }
 
+/* Chip base */
+.section-menu--global .chip {
+  --chip-bg: var(--md-default-bg-color);
+  --chip-fg: var(--md-typeset-color);
+  --chip-border: var(--md-default-fg-color--lighter, #e5e7eb);
 
-
-
-
-
-
-
-
-
-/* 
-.site-banner { 
-  margin: 2px calc(50% - 50vw) 0;  
-  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  text-decoration: none;
+  border: 1px solid var(--chip-border) !important; /* override old .section-menu rules */
+  background: var(--chip-bg) !important;
+  color: var(--chip-fg) !important;
+  font-weight: 600;
+  line-height: 1;
+  box-shadow: 0 1px 2px rgba(0,0,0,.05);
+  transition: transform .08s ease, box-shadow .12s ease, background .12s, color .12s, border-color .12s;
 }
 
-.site-banner img {
-  display: block;
-  width: 100vw;       
-  max-width: 100vw;
-  height: clamp(200px, 26vw, 400px);
-  object-fit: cover;
-  object-position: center;
+.section-menu--global .chip:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(0,0,0,.08);
 }
 
-.md-main__inner { padding-top: 0; }
-*/
+/* Colored dot */
+.chip-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: currentColor;
+  box-shadow: inset 0 0 0 2px rgba(255,255,255,.85);
+}
+
+/* Active (current section) */
+.section-menu--global .chip.active {
+  --chip-bg: var(--chip-fg);
+  --chip-border: var(--chip-fg);
+  color: #fff !important;
+}
+
+/* Per-category colors (tweak to your palette) */
+.section-menu--global .is-articles    { --chip-fg: #2563eb; } /* blue */
+.section-menu--global .is-benchmarks  { --chip-fg: #0ea5e9; } /* sky */
+.section-menu--global .is-frameworks  { --chip-fg: #f97316; } /* orange */
+.section-menu--global .is-repos       { --chip-fg: #ef4444; } /* red */
+.section-menu--global .is-datasets    { --chip-fg: #f59e0b; } /* amber */
+.section-menu--global .is-videos      { --chip-fg: #8b5cf6; } /* violet */
+.section-menu--global .is-conferences { --chip-fg: #14b8a6; } /* teal */
+.section-menu--global .is-newsletters { --chip-fg: #64748b; } /* slate */
