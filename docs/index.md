@@ -1,14 +1,14 @@
 ---
 hide:
   - toc
+  - title
 ---
 
-<!-- Homepage hook so we can target layout only here -->
-<script>document.documentElement.classList.add('home')</script>
+<script>document.documentElement.classList.add('home');</script>
 
-<!-- Team photo directly under the blue header -->
+<!-- Team banner directly under the blue header -->
 <div class="team-hero">
-  <img src="assets/teamphoto.jpeg?v=3" alt="Framelab team" loading="eager">
+  <img src="assets/teamphoto.jpeg" alt="Framelab team" loading="eager">
 </div>
 
 <!-- Horizontal menu with 8 sections -->
