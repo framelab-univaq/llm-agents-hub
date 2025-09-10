@@ -1,6 +1,5 @@
-<!-- BUILD_ID 1757493518 -->
+<!-- BUILD_ID 1757493518 
 
-<!-- Horizontal menu with 8 sections -->
 <nav class="section-menu" aria-label="Sections">
   <a href="articles/">📄 Articles</a>
   <a href="benchmarks/">📊 Benchmarks</a>
@@ -11,7 +10,7 @@
   <a href="conferences/">🎓 Conferences</a>
   <a href="newsletters/">📰 Newsletters</a>
 </nav>
-
+-->
 *A curated, annotated index of research and practice around LLM-based agents.*
 
 ---
