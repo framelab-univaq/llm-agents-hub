@@ -1,4 +1,3 @@
-cat > docs/index.md <<'EOF'
 # LLM Agents Hub
 
 <!-- Team banner directly under header -->
