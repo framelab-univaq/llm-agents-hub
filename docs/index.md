@@ -1,7 +1,4 @@
 
-
-
-
 <!-- Horizontal menu with 8 sections -->
 <nav class="section-menu" aria-label="Sections">
   <a href="articles/">📄 Articles</a>
