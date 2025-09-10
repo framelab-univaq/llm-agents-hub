@@ -1,41 +1,61 @@
+{% extends "base.html" %}
+
+{# One (and only one) tabs block #}
+{% block tabs %}
+  {{ super() }}
+
+  {# Get a safe URL string for active-state checks #}
+  {% if page is defined and page is not none and page.url is defined %}
+    {% set purl = page.url %}
+  {% else %}
+    {% set purl = '' %}
+  {% endif %}
+
+  <div class="site-banner" role="img" aria-label="Framelab team — LLM Agents Hub">
+    <img src="{{ base_url }}/assets/teamphoto.jpeg"
+         alt="Framelab team — LLM Agents Hub"
+         loading="eager" decoding="async" />
+  </div>
+
   <nav class="section-menu section-menu--global" aria-label="Sections">
     <a href="{{ base_url }}/articles/"
-       class="chip is-articles {% if page.url.startswith('articles/') %}active{% endif %}">
+       class="chip is-articles {{ 'active' if purl.startswith('articles/') else '' }}">
       <span class="chip-dot" aria-hidden="true"></span><span class="chip-label">Articles</span>
     </a>
 
     <a href="{{ base_url }}/benchmarks/"
-       class="chip is-benchmarks {% if page.url.startswith('benchmarks/') %}active{% endif %}">
+       class="chip is-benchmarks {{ 'active' if purl.startswith('benchmarks/') else '' }}">
       <span class="chip-dot" aria-hidden="true"></span><span class="chip-label">Benchmarks</span>
     </a>
 
     <a href="{{ base_url }}/frameworks/"
-       class="chip is-frameworks {% if page.url.startswith('frameworks/') %}active{% endif %}">
+       class="chip is-frameworks {{ 'active' if purl.startswith('frameworks/') else '' }}">
       <span class="chip-dot" aria-hidden="true"></span><span class="chip-label">Frameworks</span>
     </a>
 
     <a href="{{ base_url }}/repos/"
-       class="chip is-repos {% if page.url.startswith('repos/') %}active{% endif %}">
+       class="chip is-repos {{ 'active' if purl.startswith('repos/') else '' }}">
       <span class="chip-dot" aria-hidden="true"></span><span class="chip-label">Repos</span>
     </a>
 
     <a href="{{ base_url }}/datasets/"
-       class="chip is-datasets {% if page.url.startswith('datasets/') %}active{% endif %}">
+       class="chip is-datasets {{ 'active' if purl.startswith('datasets/') else '' }}">
       <span class="chip-dot" aria-hidden="true"></span><span class="chip-label">Datasets</span>
     </a>
 
     <a href="{{ base_url }}/videos/"
-       class="chip is-videos {% if page.url.startswith('videos/') %}active{% endif %}">
+       class="chip is-videos {{ 'active' if purl.startswith('videos/') else '' }}">
       <span class="chip-dot" aria-hidden="true"></span><span class="chip-label">Videos</span>
     </a>
 
     <a href="{{ base_url }}/conferences/"
-       class="chip is-conferences {% if page.url.startswith('conferences/') %}active{% endif %}">
+       class="chip is-conferences {{ 'active' if purl.startswith('conferences/') else '' }}">
       <span class="chip-dot" aria-hidden="true"></span><span class="chip-label">Conferences</span>
     </a>
 
     <a href="{{ base_url }}/newsletters/"
-       class="chip is-newsletters {% if page.url.startswith('newsletters/') %}active{% endif %}">
+       class="chip is-newsletters {{ 'active' if purl.startswith('newsletters/') else '' }}">
       <span class="chip-dot" aria-hidden="true"></span><span class="chip-label">Newsletters</span>
     </a>
   </nav>
+{% endblock %}
