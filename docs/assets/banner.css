@@ -4,7 +4,7 @@
 /* 2px gap under the header */
 .md-banner .site-banner { margin: 2px 0 0; }
 
-/* Full-width cropped image */
+/* Full-width cropped image (no overlay) */
 .md-banner .site-banner img {
   display: block;
   width: 100%;
