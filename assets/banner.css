@@ -17,6 +17,14 @@
 /* Keep page content tight under banner */
 .md-main__inner { padding-top: 0; }
 
+/* Global section buttons under the banner */
+.site-banner + .section-menu--global {
+  margin: 10px auto 18px;   /* space below photo */
+  max-width: 1100px;        /* keep a nice line length; adjust if you like */
+  padding: 0 12px;
+}
+
+
 
 
 

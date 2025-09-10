@@ -1,11 +1,28 @@
 {% extends "base.html" %}
 
-{# Put banner directly under the header (and tabs, if present) #}
+{# Put banner + global section buttons directly under the header/tabs #}
 {% block tabs %}
   {{ super() }}
+
   <div class="site-banner" role="img" aria-label="Framelab team — LLM Agents Hub">
     <img src="{{ base_url }}/assets/teamphoto.jpeg"
          alt="Framelab team — LLM Agents Hub"
          loading="eager" decoding="async" />
   </div>
+
+  <nav class="section-menu section-menu--global" aria-label="Sections">
+    <a href="{{ base_url }}/articles/">📄 Articles</a>
+    <a href="{{ base_url }}/benchmarks/">📊 Benchmarks</a>
+    <a href="{{ base_url }}/frameworks/">🧰 Frameworks</a>
+    <a href="{{ base_url }}/repos/">🧱 Repos</a>
+    <a href="{{ base_url }}/datasets/">🗂️ Datasets</a>
+    <a href="{{ base_url }}/videos/">🎥 Videos</a>
+    <a href="{{ base_url }}/conferences/">🎓 Conferences</a>
+    <a href="{{ base_url }}/newsletters/">📰 Newsletters</a>
+  </nav>
 {% endblock %}
+
+
+
+
+
