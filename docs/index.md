@@ -3,13 +3,15 @@ hide:
   - toc
 ---
 
-<!-- Add a one-page hook so homepage-only CSS can target this page -->
+<!-- Homepage hook so we can target layout only here -->
 <script>document.documentElement.classList.add('home')</script>
 
-<!-- Team photo directly under the blue header (width = content column, taller & nicely cropped) -->
-<div class="team-hero" role="img" aria-label="Framelab team photo"></div>
+<!-- Team photo directly under the blue header -->
+<div class="team-hero">
+  <img src="assets/teamphoto.jpeg?v=3" alt="Framelab team" loading="eager">
+</div>
 
-<!-- Horizontal menu with 8 sections (put back in comments if you want to hide it for now) -->
+<!-- Horizontal menu with 8 sections -->
 <nav class="section-menu" aria-label="Sections">
   <a href="articles/">📄 Articles</a>
   <a href="benchmarks/">📊 Benchmarks</a>
