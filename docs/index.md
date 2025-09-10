@@ -22,7 +22,6 @@ hide:
 
 *A curated, annotated index of research and practice around LLM-based agents.*
 
-<!-- rest of the page unchanged -->
 
 
 ## About
