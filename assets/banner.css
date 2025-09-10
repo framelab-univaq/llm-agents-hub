@@ -1,0 +1,23 @@
+/* ===== Global team banner: shown on EVERY page just below the blue header =====
+   We insert a pseudo-element before the page content container and paint the
+   team image as its background. Adjust height to your taste.
+*/
+
+.md-content__inner::before {
+  content: "";
+  display: block;
+  height: 340px; /* adjust 300–420px to taste */
+  margin: 0 0 18px;
+  border-radius: 16px;
+  box-shadow: 0 1px 2px rgba(0,0,0,.06);
+  background: url("teamphoto.jpeg?v=20250910") center/cover no-repeat;
+}
+
+/* Optional: tidy up spacing on all pages */
+.md-main__inner { padding-top: 0; }
+
+/* (Optional) If you *don’t* want the banner on a specific page,
+   add `banner: false` to that page’s front-matter and uncomment this:
+
+:root[data-page-banner="false"] .md-content__inner::before { display: none; }
+*/
