@@ -24,6 +24,7 @@ extra_css:
   - assets/header.css            # optional, if you want size tweaks
   - assets/home.css 
   - assets/newsletters.css
+  - assets/banner.css
 
 extra_javascript:
   - assets/newsletters.js
