@@ -51,12 +51,77 @@
   color: #fff !important;
 }
 
-/* Per-category colors (tweak to your palette) */
-.section-menu--global .is-articles    { --chip-fg: #2563eb; } /* blue */
-.section-menu--global .is-benchmarks  { --chip-fg: #0ea5e9; } /* sky */
-.section-menu--global .is-frameworks  { --chip-fg: #f97316; } /* orange */
-.section-menu--global .is-repos       { --chip-fg: #ef4444; } /* red */
-.section-menu--global .is-datasets    { --chip-fg: #f59e0b; } /* amber */
-.section-menu--global .is-videos      { --chip-fg: #8b5cf6; } /* violet */
-.section-menu--global .is-conferences { --chip-fg: #14b8a6; } /* teal */
-.section-menu--global .is-newsletters { --chip-fg: #64748b; } /* slate */
+
+
+
+
+
+
+/* === Global tiles under the banner === */
+.section-menu--global.tiles {
+  margin: 10px auto 18px;
+  max-width: 1100px;
+  padding: 0 12px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+/* Tile look: big, centered, icon + label */
+.section-menu--global.tiles .tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 110px;                 /* adjust to taste */
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 700;
+  color: #fff;
+  background: var(--tile-bg, #1e40af);  /* default blue */
+  box-shadow: 0 2px 8px rgba(0,0,0,.08);
+  border: none;
+  transition: transform .12s ease, box-shadow .12s ease, filter .12s ease;
+}
+
+.section-menu--global.tiles .tile:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(0,0,0,.12);
+}
+
+/* Icon + label */
+.section-menu--global.tiles .tile .emoji {
+  font-size: 28px;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+.section-menu--global.tiles .tile .label {
+  line-height: 1.2;
+  letter-spacing: .2px;
+}
+
+/* Active page highlight */
+.section-menu--global.tiles .tile.active {
+  outline: 2px solid rgba(255,255,255,.9);
+  outline-offset: -2px;
+  filter: brightness(1.05);
+}
+
+/* Optional: per-category blues (like your reference row) */
+.section-menu--global.tiles .is-articles    { --tile-bg: #1e3a8a; } /* deep blue */
+.section-menu--global.tiles .is-benchmarks  { --tile-bg: #1d4ed8; }
+.section-menu--global.tiles .is-frameworks  { --tile-bg: #2563eb; }
+.section-menu--global.tiles .is-repos       { --tile-bg: #0ea5e9; }
+.section-menu--global.tiles .is-datasets    { --tile-bg: #0284c7; }
+.section-menu--global.tiles .is-videos      { --tile-bg: #0ea5e9; }
+.section-menu--global.tiles .is-conferences { --tile-bg: #22c55e; } /* tweak if you want all-blue */
+.section-menu--global.tiles .is-newsletters { --tile-bg: #334155; } /* slate */
+
+
+
+
+
+
+
+
+

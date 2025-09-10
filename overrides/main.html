@@ -17,45 +17,54 @@
          loading="eager" decoding="async" />
   </div>
 
-  <nav class="section-menu section-menu--global" aria-label="Sections">
+   <nav class="section-menu section-menu--global tiles" aria-label="Sections">
     <a href="{{ base_url }}/articles/"
-       class="chip is-articles {{ 'active' if purl.startswith('articles/') else '' }}">
-      <span class="chip-dot" aria-hidden="true"></span><span class="chip-label">Articles</span>
+       class="tile is-articles {{ 'active' if (page and page.url and page.url.startswith('articles/')) else '' }}">
+      <span class="emoji" aria-hidden="true">📄</span>
+      <span class="label">Articles</span>
     </a>
 
     <a href="{{ base_url }}/benchmarks/"
-       class="chip is-benchmarks {{ 'active' if purl.startswith('benchmarks/') else '' }}">
-      <span class="chip-dot" aria-hidden="true"></span><span class="chip-label">Benchmarks</span>
+       class="tile is-benchmarks {{ 'active' if (page and page.url and page.url.startswith('benchmarks/')) else '' }}">
+      <span class="emoji" aria-hidden="true">📊</span>
+      <span class="label">Benchmarks</span>
     </a>
 
     <a href="{{ base_url }}/frameworks/"
-       class="chip is-frameworks {{ 'active' if purl.startswith('frameworks/') else '' }}">
-      <span class="chip-dot" aria-hidden="true"></span><span class="chip-label">Frameworks</span>
+       class="tile is-frameworks {{ 'active' if (page and page.url and page.url.startswith('frameworks/')) else '' }}">
+      <span class="emoji" aria-hidden="true">🧰</span>
+      <span class="label">Frameworks</span>
     </a>
 
     <a href="{{ base_url }}/repos/"
-       class="chip is-repos {{ 'active' if purl.startswith('repos/') else '' }}">
-      <span class="chip-dot" aria-hidden="true"></span><span class="chip-label">Repos</span>
+       class="tile is-repos {{ 'active' if (page and page.url and page.url.startswith('repos/')) else '' }}">
+      <span class="emoji" aria-hidden="true">🧱</span>
+      <span class="label">Repos</span>
     </a>
 
     <a href="{{ base_url }}/datasets/"
-       class="chip is-datasets {{ 'active' if purl.startswith('datasets/') else '' }}">
-      <span class="chip-dot" aria-hidden="true"></span><span class="chip-label">Datasets</span>
+       class="tile is-datasets {{ 'active' if (page and page.url and page.url.startswith('datasets/')) else '' }}">
+      <span class="emoji" aria-hidden="true">🗂️</span>
+      <span class="label">Datasets</span>
     </a>
 
     <a href="{{ base_url }}/videos/"
-       class="chip is-videos {{ 'active' if purl.startswith('videos/') else '' }}">
-      <span class="chip-dot" aria-hidden="true"></span><span class="chip-label">Videos</span>
+       class="tile is-videos {{ 'active' if (page and page.url and page.url.startswith('videos/')) else '' }}">
+      <span class="emoji" aria-hidden="true">🎥</span>
+      <span class="label">Videos</span>
     </a>
 
     <a href="{{ base_url }}/conferences/"
-       class="chip is-conferences {{ 'active' if purl.startswith('conferences/') else '' }}">
-      <span class="chip-dot" aria-hidden="true"></span><span class="chip-label">Conferences</span>
+       class="tile is-conferences {{ 'active' if (page and page.url and page.url.startswith('conferences/')) else '' }}">
+      <span class="emoji" aria-hidden="true">🎓</span>
+      <span class="label">Conferences</span>
     </a>
 
     <a href="{{ base_url }}/newsletters/"
-       class="chip is-newsletters {{ 'active' if purl.startswith('newsletters/') else '' }}">
-      <span class="chip-dot" aria-hidden="true"></span><span class="chip-label">Newsletters</span>
+       class="tile is-newsletters {{ 'active' if (page and page.url and page.url.startswith('newsletters/')) else '' }}">
+      <span class="emoji" aria-hidden="true">📰</span>
+      <span class="label">Newsletters</span>
     </a>
   </nav>
+
 {% endblock %}
