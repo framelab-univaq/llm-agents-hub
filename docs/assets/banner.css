@@ -1,18 +1,18 @@
-/* Announcement area sits right under the blue header */
-.md-banner { padding: 0 !important; margin: 0 !important; background: transparent; box-shadow: none; }
+/* Banner sits directly under the blue header */
+.site-banner { 
+  margin: 2px calc(50% - 50vw) 0;  /* 2px gap + full-bleed width */
+  overflow: hidden;
+}
 
-/* EXACT 2px gap below header */
-.md-banner .site-banner { margin-top: 2px !important; }
-
-/* Full-width image (auto-cropped to height) */
-.md-banner .site-banner img {
+/* Full-bleed image with nice crop */
+.site-banner img {
   display: block;
-  width: 100%;
+  width: 100vw;          /* match header width */
+  max-width: 100vw;
   height: clamp(200px, 26vw, 400px);
   object-fit: cover;
   object-position: center;
 }
 
-/* Start page content immediately below the banner */
-.md-main__inner { padding-top: 0 !important; }
-.md-banner + .md-main { margin-top: 0 !important; }
+/* Ensure page content doesn't add extra top padding */
+.md-main__inner { padding-top: 0; }
