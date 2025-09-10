@@ -15,9 +15,29 @@ markdown_extensions:
 
 theme:
   name: material
-  custom_dir: docs/overrides
+  custom_dir: overrides
   logo: assets/header-logo1.png
   favicon: assets/favicon.png
 
-extra:
-  announcement: enabled
+extra_css:
+  - assets/extra.css
+  - assets/header.css
+  - assets/home.css
+  - assets/newsletters.css
+  - assets/banner.css
+
+extra_javascript:
+  - assets/newsletters.js
+
+nav:
+  - Home: index.md
+  - Taxonomy: taxonomy.md
+  - Frameworks: frameworks.md
+  - Research Papers: articles.md
+  - Benchmarks: benchmarks.md
+  - Repos: repos.md
+  - Industry Case Studies: case-studies.md
+  - Conferences & Workshops: conferences.md
+  - Videos & Talks: videos.md
+  - Datasets: datasets.md
+  - Newsletters: newsletters.md
