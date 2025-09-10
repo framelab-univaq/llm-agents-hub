@@ -107,6 +107,7 @@
 .section-menu--global.tiles .tile .label {
   line-height: 1.2;
   letter-spacing: .2px;
+  font-size: 30px; 
 }
 
 /* Active page highlight (inset ring so no seams) */
