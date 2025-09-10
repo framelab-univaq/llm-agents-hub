@@ -44,4 +44,14 @@ cat > docs/assets/home.css <<'EOF'
 @media (max-width: 680px) {
   .section-menu a { padding: 9px 12px; }
 }
+
+
+
+
+/* Homepage-only fixes (require the <script> that adds .home above) */
+.home .md-content__inner > h1:first-child { display: none; }  /* hide auto page title */
+.home .md-sidebar--secondary { display: none; }               /* hide right-hand ToC */
+.home .md-main__inner { padding-top: 0; }                     /* pull content up */
+.home .team-hero { margin-top: 0; }                           /* photo hugs header */
+
 EOF
