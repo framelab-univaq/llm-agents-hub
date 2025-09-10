@@ -18,9 +18,11 @@ theme:
   custom_dir: docs/overrides
   logo: assets/header-logo1.png
   favicon: assets/favicon.png
+
+# Enable the announcement bar so our override renders
 extra:
-  announcement: ""   # <-- enables the announcement bar (content comes from our partial)
-  
+  announcement: " "   # non-empty string enables the bar
+
 extra_css:
   - assets/extra.css
   - assets/header.css
@@ -43,7 +45,3 @@ nav:
   - Videos & Talks: videos.md
   - Datasets: datasets.md
   - Newsletters: newsletters.md
-
-
-extra:
-  announcement: " "
