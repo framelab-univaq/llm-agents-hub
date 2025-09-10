@@ -3,12 +3,13 @@ hide:
   - toc
 ---
 
-<!-- Team banner directly under header -->
-<div class="team-hero">
-  <img src="assets/teamphoto.jpeg" alt="Framelab team">
-</div>
+<!-- Add a one-page hook so homepage-only CSS can target this page -->
+<script>document.documentElement.classList.add('home')</script>
 
-<!-- Horizontal menu with 8 sections -->
+<!-- Team photo directly under the blue header (width = content column, taller & nicely cropped) -->
+<div class="team-hero" role="img" aria-label="Framelab team photo"></div>
+
+<!-- Horizontal menu with 8 sections (put back in comments if you want to hide it for now) -->
 <nav class="section-menu" aria-label="Sections">
   <a href="articles/">📄 Articles</a>
   <a href="benchmarks/">📊 Benchmarks</a>
@@ -22,7 +23,7 @@ hide:
 
 *A curated, annotated index of research and practice around LLM-based agents.*
 
-
+---
 
 ## About
 
