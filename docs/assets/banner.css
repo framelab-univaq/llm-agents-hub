@@ -1,14 +1,14 @@
 /* Render banner in the announcement bar right under the blue header */
 .md-banner { padding: 0; background: transparent; box-shadow: none; }
 
-/* 2px gap under the header (as requested) */
+/* 2px gap under the header */
 .md-banner .site-banner { margin: 2px 0 0; }
 
-/* Full-width cropped image, no text overlay */
+/* Full-width cropped image */
 .md-banner .site-banner img {
   display: block;
   width: 100%;
-  height: clamp(200px, 26vw, 400px); /* adjust height to taste */
+  height: clamp(200px, 26vw, 400px);
   object-fit: cover;
   object-position: center;
 }

@@ -19,9 +19,8 @@ theme:
   logo: assets/header-logo1.png
   favicon: assets/favicon.png
 
-# Enable the announcement bar so our override renders
 extra:
-  announcement: " "   # non-empty string enables the bar
+  announcement: " "   # enable the announcement bar
 
 extra_css:
   - assets/extra.css
