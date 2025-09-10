@@ -1,4 +1,7 @@
-# LLM Agents Hub
+---
+hide:
+  - toc
+---
 
 <!-- Team banner directly under header -->
 <div class="team-hero">
@@ -69,4 +72,3 @@ We welcome PRs and suggestions—especially with a short note on *why it matters
 - ✅ Basic taxonomy and section stubs  
 - ✅ Live spreadsheet integration  
 - ⏳ Seed each section with annotated examples
-EOF
