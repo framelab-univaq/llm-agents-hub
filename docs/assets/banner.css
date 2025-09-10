@@ -1,17 +1,23 @@
-/* Render banner in the announcement bar right under the blue header */
-.md-banner { padding: 0; background: transparent; box-shadow: none; }
+/* Kill any top spacing under the header */
+.md-main__inner { padding-top: 0; }
+.md-header + .md-main .site-banner { margin-top: 0; }
 
-/* 2px gap under the header */
-.md-banner .site-banner { margin: 2px 0 0; }
+/* Full-bleed banner (same length as header) */
+.site-banner {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  margin-top: 0;
+  margin-bottom: 18px;
+  border-radius: 0;
+  overflow: hidden;
+  box-shadow: none;
+}
 
-/* Full-width cropped image (no overlay) */
-.md-banner .site-banner img {
+.site-banner img {
   display: block;
-  width: 100%;
-  height: clamp(200px, 26vw, 400px);
+  width: 100vw;
+  max-width: 100vw;
+  height: clamp(180px, 26vw, 380px); /* adjust height if you want */
   object-fit: cover;
   object-position: center;
 }
-
-/* Ensure page content starts immediately below the banner */
-.md-main__inner { padding-top: 0; }
