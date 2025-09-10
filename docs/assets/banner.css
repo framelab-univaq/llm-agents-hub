@@ -65,14 +65,17 @@
 
 /* === Global tiles under the banner === */
 /* One row of 8, zero gap, full-width aligned with banner edges */
+/* --- Tiles: one row of 8, zero gap, full-bleed like the photo --- */
 .section-menu--global.tiles {
-  margin: 0 calc(50% - 50vw) 0;  /* align with banner edges */
+  margin: 0 calc(50% - 50vw) 0;   /* align with banner edges */
   padding: 0;
   width: 100vw;
+  max-width: none !important;      /* override the 1100px cap from .section-menu--global */
   display: grid;
-  grid-template-columns: repeat(8, minmax(0, 1fr)); /* 8 tiles => 8 columns */
-  gap: 0;                                           /* no space between tiles */
+  grid-template-columns: repeat(8, minmax(0, 1fr)); /* 8 tiles => 8 equal columns */
+  gap: 0;                                            /* no space between tiles */
 }
+
 
 /* Tile look: icon + label, flush edges (no radius/shadow to avoid "gaps") */
 .section-menu--global.tiles .tile {
