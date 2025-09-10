@@ -1,4 +1,4 @@
-cat > docs/assets/home.css <<'EOF'
+
 /* ===== Team photo banner ===== */
 .team-hero {
   margin: 8px 0 14px;
@@ -54,4 +54,4 @@ cat > docs/assets/home.css <<'EOF'
 .home .md-main__inner { padding-top: 0; }                     /* pull content up */
 .home .team-hero { margin-top: 0; }                           /* photo hugs header */
 
-EOF
+
