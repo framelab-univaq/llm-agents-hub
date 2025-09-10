@@ -1,10 +1,10 @@
-/* Announce area sits right under the blue header */
-.md-banner { padding: 0; background: transparent; box-shadow: none; }
+/* Announcement area sits right under the blue header */
+.md-banner { padding: 0 !important; margin: 0 !important; background: transparent; box-shadow: none; }
 
-/* EXACT 2px gap below the header */
-.md-banner .site-banner { margin: 2px 0 0; }
+/* EXACT 2px gap below header */
+.md-banner .site-banner { margin-top: 2px !important; }
 
-/* Full-width image, cropped to height */
+/* Full-width image (auto-cropped to height) */
 .md-banner .site-banner img {
   display: block;
   width: 100%;
@@ -14,4 +14,5 @@
 }
 
 /* Start page content immediately below the banner */
-.md-main__inner { padding-top: 0; }
+.md-main__inner { padding-top: 0 !important; }
+.md-banner + .md-main { margin-top: 0 !important; }
