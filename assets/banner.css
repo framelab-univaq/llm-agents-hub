@@ -117,14 +117,14 @@
 }
 
 /* Per-category colors */
-.section-menu--global.tiles .is-articles    { --tile-bg: #1e3a8a; }
-.section-menu--global.tiles .is-benchmarks  { --tile-bg: #1d4ed8; }
-.section-menu--global.tiles .is-frameworks  { --tile-bg: #2563eb; }
-.section-menu--global.tiles .is-repos       { --tile-bg: #0ea5e9; }
-.section-menu--global.tiles .is-datasets    { --tile-bg: #0284c7; }
-.section-menu--global.tiles .is-videos      { --tile-bg: #0ea5e9; }
-.section-menu--global.tiles .is-conferences { --tile-bg: #22c55e; }
-.section-menu--global.tiles .is-newsletters { --tile-bg: #334155; }
+.section-menu--global.tiles .is-articles    { --tile-bg: #1d4ed8; }
+.section-menu--global.tiles .is-benchmarks  { --tile-bg: #60a5fa; }
+.section-menu--global.tiles .is-frameworks  { --tile-bg: #1d4ed8; }
+.section-menu--global.tiles .is-repos       { --tile-bg: #60a5fa; }
+.section-menu--global.tiles .is-datasets    { --tile-bg: #1d4ed8; }
+.section-menu--global.tiles .is-videos      { --tile-bg: #60a5fa; }
+.section-menu--global.tiles .is-conferences { --tile-bg: #1d4ed8; }
+.section-menu--global.tiles .is-newsletters { --tile-bg: #60a5fa; }
 
 /* Optional: small-screen fallback (horizontal scroll instead of squish) */
 @media (max-width: 1300px) {
