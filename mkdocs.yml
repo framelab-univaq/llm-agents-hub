@@ -24,7 +24,7 @@ extra_css:
   - assets/header.css
   - assets/home.css
   - assets/newsletters.css
-  - assets/banner.css
+  - assets/banner.css?v=2
 
 extra_javascript:
   - assets/newsletters.js
