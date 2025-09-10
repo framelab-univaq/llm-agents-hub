@@ -1,3 +1,10 @@
+---
+hide:
+  - title
+---
+
+
+
 <!-- BUILD_ID 1757493518 
 
 <nav class="section-menu" aria-label="Sections">
@@ -11,7 +18,7 @@
   <a href="newsletters/">📰 Newsletters</a>
 </nav>
 -->
-*A curated, annotated index of research and practice around LLM-based agents.*
+
 
 ---
 
