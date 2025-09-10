@@ -1,28 +1,41 @@
-{% extends "base.html" %}
-
-{# Put banner + global section buttons directly under the header/tabs #}
-{% block tabs %}
-  {{ super() }}
-
-  <div class="site-banner" role="img" aria-label="Framelab team — LLM Agents Hub">
-    <img src="{{ base_url }}/assets/teamphoto.jpeg"
-         alt="Framelab team — LLM Agents Hub"
-         loading="eager" decoding="async" />
-  </div>
-
   <nav class="section-menu section-menu--global" aria-label="Sections">
-    <a href="{{ base_url }}/articles/">📄 Articles</a>
-    <a href="{{ base_url }}/benchmarks/">📊 Benchmarks</a>
-    <a href="{{ base_url }}/frameworks/">🧰 Frameworks</a>
-    <a href="{{ base_url }}/repos/">🧱 Repos</a>
-    <a href="{{ base_url }}/datasets/">🗂️ Datasets</a>
-    <a href="{{ base_url }}/videos/">🎥 Videos</a>
-    <a href="{{ base_url }}/conferences/">🎓 Conferences</a>
-    <a href="{{ base_url }}/newsletters/">📰 Newsletters</a>
+    <a href="{{ base_url }}/articles/"
+       class="chip is-articles {% if page.url.startswith('articles/') %}active{% endif %}">
+      <span class="chip-dot" aria-hidden="true"></span><span class="chip-label">Articles</span>
+    </a>
+
+    <a href="{{ base_url }}/benchmarks/"
+       class="chip is-benchmarks {% if page.url.startswith('benchmarks/') %}active{% endif %}">
+      <span class="chip-dot" aria-hidden="true"></span><span class="chip-label">Benchmarks</span>
+    </a>
+
+    <a href="{{ base_url }}/frameworks/"
+       class="chip is-frameworks {% if page.url.startswith('frameworks/') %}active{% endif %}">
+      <span class="chip-dot" aria-hidden="true"></span><span class="chip-label">Frameworks</span>
+    </a>
+
+    <a href="{{ base_url }}/repos/"
+       class="chip is-repos {% if page.url.startswith('repos/') %}active{% endif %}">
+      <span class="chip-dot" aria-hidden="true"></span><span class="chip-label">Repos</span>
+    </a>
+
+    <a href="{{ base_url }}/datasets/"
+       class="chip is-datasets {% if page.url.startswith('datasets/') %}active{% endif %}">
+      <span class="chip-dot" aria-hidden="true"></span><span class="chip-label">Datasets</span>
+    </a>
+
+    <a href="{{ base_url }}/videos/"
+       class="chip is-videos {% if page.url.startswith('videos/') %}active{% endif %}">
+      <span class="chip-dot" aria-hidden="true"></span><span class="chip-label">Videos</span>
+    </a>
+
+    <a href="{{ base_url }}/conferences/"
+       class="chip is-conferences {% if page.url.startswith('conferences/') %}active{% endif %}">
+      <span class="chip-dot" aria-hidden="true"></span><span class="chip-label">Conferences</span>
+    </a>
+
+    <a href="{{ base_url }}/newsletters/"
+       class="chip is-newsletters {% if page.url.startswith('newsletters/') %}active{% endif %}">
+      <span class="chip-dot" aria-hidden="true"></span><span class="chip-label">Newsletters</span>
+    </a>
   </nav>
-{% endblock %}
-
-
-
-
-
