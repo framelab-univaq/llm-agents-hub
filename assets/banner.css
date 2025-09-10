@@ -1,18 +1,44 @@
-/* Banner sits directly under the blue header */
-.site-banner { 
-  margin: 2px calc(50% - 50vw) 0;  /* 2px gap + full-bleed width */
+/* Banner sits directly under the blue header — content width */
+.site-banner {
+  margin: 2px 0 0;   /* 2px gap; remove full-bleed margins */
+  width: 100%;
   overflow: hidden;
 }
 
-/* Full-bleed image with nice crop */
+/* Image fills content width, centered crop, fixed height */
 .site-banner img {
   display: block;
-  width: 100vw;          /* match header width */
+  width: 100%;
+  height: 100px;      /* fixed height */
+  object-fit: cover;  /* crop to fit height */
+  object-position: center; /* center the crop */
+}
+
+/* Keep page content tight under banner */
+.md-main__inner { padding-top: 0; }
+
+
+
+
+
+
+
+
+
+/* 
+.site-banner { 
+  margin: 2px calc(50% - 50vw) 0;  
+  overflow: hidden;
+}
+
+.site-banner img {
+  display: block;
+  width: 100vw;       
   max-width: 100vw;
   height: clamp(200px, 26vw, 400px);
   object-fit: cover;
   object-position: center;
 }
 
-/* Ensure page content doesn't add extra top padding */
 .md-main__inner { padding-top: 0; }
+*/
