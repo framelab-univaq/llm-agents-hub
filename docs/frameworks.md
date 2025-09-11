@@ -1,8 +1,6 @@
 # Frameworks
 
-Practical frameworks and libraries for building **LLM-based agents**: orchestration, tool-use, multi-agent patterns, memory/state, and evaluation.
-
-> Keep descriptions to one line and link to the canonical repo or docs.
+Libraries to build & orchestrate agents. The table lists Name, Focus/Capabilities, and Docs/GitHub.
 
 | Name | Description | Link |
 |---|---|---|
