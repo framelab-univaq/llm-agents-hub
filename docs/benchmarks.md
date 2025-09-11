@@ -1,8 +1,6 @@
 # Benchmarks
 
-A curated set of evaluation suites for **LLM-based agents**. These focus on goal-directed behavior such as web navigation, tool use, software engineering, and embodied/GUI tasks.
-
-> Tip: when adding a new item, keep the description to one line and link to the **canonical site or GitHub**.
+Evaluation suites for agents (web nav, coding, GUI, etc.). The table lists Name, What it measures, and the Official site/GitHub.
 
 | Name | Description | Link |
 |---|---|---|
