@@ -2,7 +2,9 @@
 title: ""
 hide:
   - title
+class: home
 ---
+
 
 
 
