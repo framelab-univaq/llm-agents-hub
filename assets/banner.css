@@ -134,3 +134,27 @@
     grid-auto-columns: minmax(160px, 1fr);
   }
 }
+
+
+
+
+
+/* ==== FORCE-HIDE LEFT SIDEBAR (desktop) ==== */
+@media (min-width: 76.25em) {
+  /* Material shows the primary nav only at ≥76.25em — kill it */
+  .md-sidebar--primary { display: none !important; }
+
+  /* Extra belt-and-suspenders in case theme structure differs */
+  .md-nav--primary { display: none !important; }
+
+  /* Reflow: content column + right ToC column */
+  .md-main__inner {
+    grid-template-columns: minmax(0, 1fr) var(--md-sidebar-width, 18rem) !important;
+  }
+}
+
+/* Optional: hide the breadcrumb line above the title */
+.md-path { display: none !important; }
+
+
+
