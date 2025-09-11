@@ -1,0 +1,63 @@
+/* Grid layout */
+.papers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 14px;
+  margin: 10px 0 24px;
+}
+
+/* Card */
+.paper-card {
+  border: 1px solid var(--md-default-fg-color--lighter, #e5e7eb);
+  background: var(--md-default-bg-color);
+  border-radius: 16px;
+  padding: 14px;
+  box-shadow: 0 1px 2px rgba(0,0,0,.06);
+  transition: transform .08s ease, box-shadow .12s ease, border-color .12s ease;
+}
+.paper-card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(0,0,0,.08);
+  border-color: var(--md-primary-fg-color);
+}
+
+/* Title & meta */
+.paper-card h3 {
+  font-size: 1rem;
+  line-height: 1.35;
+  margin: 0 0 8px;
+}
+.paper-card .meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  font-size: 0.85rem;
+  margin-bottom: 6px;
+  opacity: .9;
+}
+.paper-card .badge {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 999px;
+  border: 1px solid var(--md-default-fg-color--lighter, #e5e7eb);
+  background: var(--md-default-bg-color);
+  line-height: 1;
+  font-weight: 600;
+}
+.paper-card .badge.year { }
+.paper-card .badge.venue { }
+.paper-card .id {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  font-size: .8rem;
+  opacity: .75;
+}
+
+/* Notes */
+.paper-card .notes {
+  margin: 0;
+  font-size: .92rem;
+  color: var(--md-typeset-color);
+}
