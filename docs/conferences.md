@@ -1,8 +1,6 @@
 # Conferences & Workshops
 
-Recurring conferences and focused workshops that frequently feature **LLM-based agents**, tool use, web/navigation, multi-agent systems, and evaluation.
-
-> Tip: link to the **official site** for each venue/workshop; keep descriptions to one line.
+Major venues and workshops relevant to agentic AI. The table lists Name, Theme, and the Official site/CFP.
 
 | Name | Description | Link |
 |---|---|---|
