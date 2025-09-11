@@ -29,7 +29,6 @@ Peer-reviewed papers and surveys on agentic LLMs. The table lists Title, Year/Ve
 | [Dynamic LLM-Agent Network: An LLM-Agent Collaboration Framework with Agent Team Optimization](https://arxiv.org/abs/2310.02170) | 2023 | arXiv | Multi-agent, team optimization |
 | [AI Deception: A Survey of Examples, Risks, and Potential Solutions](https://arxiv.org/abs/2308.14752) | 2023 | arXiv | Deception, survey |
 | [Personality Traits in Large Language Models](https://arxiv.org/abs/2307.00184) | 2023 | arXiv | Personality traits |
-
 | [Learning to Use Tools via Cooperative and Interactive Agents](https://arxiv.org/abs/2403.03031) | 2024 | arXiv | Tool use, multi-agent |
 | [Reflexion: Language Agents with Verbal Reinforcement Learning](https://arxiv.org/abs/2303.11366) | 2023 | arXiv | Self-reflection, RL |
 | [Systematic Biases in LLM Simulations of Debates](https://arxiv.org/abs/2402.04049) | 2024 | arXiv | Simulation bias |
