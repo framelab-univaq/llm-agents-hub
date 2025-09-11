@@ -139,19 +139,22 @@
 
 
 
-/* === Hide left sidebar (primary navigation) site-wide === */
-.md-sidebar--primary {
-  display: none;
-}
+/* ==== FORCE-HIDE LEFT SIDEBAR (desktop) ==== */
+@media (min-width: 76.25em) {
+  /* Material shows the primary nav only at ≥76.25em — kill it */
+  .md-sidebar--primary { display: none !important; }
 
-/* Reflow layout so content expands; keep the right ToC visible */
-@media screen and (min-width: 76.25em) {
+  /* Extra belt-and-suspenders in case theme structure differs */
+  .md-nav--primary { display: none !important; }
+
+  /* Reflow: content column + right ToC column */
   .md-main__inner {
-    grid-template-columns: 0 minmax(0, 1fr) var(--md-sidebar-width, 18rem);
+    grid-template-columns: minmax(0, 1fr) var(--md-sidebar-width, 18rem) !important;
   }
 }
 
-/* (Optional) Hide the breadcrumb line above the title */
-.md-path { display: none; }
+/* Optional: hide the breadcrumb line above the title */
+.md-path { display: none !important; }
+
 
 
