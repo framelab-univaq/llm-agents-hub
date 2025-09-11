@@ -1,6 +1,5 @@
 # Research Papers
 
-> Curated references for agentic LLMs — reasoning, tool use, multi-agent systems, evaluation, and safety.
 
 | Title | Year | Venue | Notes |
 |---|---:|---|---|
