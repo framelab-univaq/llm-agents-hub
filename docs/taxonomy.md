@@ -1,9 +1,6 @@
 # Taxonomy & Tags
 
-This page defines the controlled vocabulary we use across the hub so entries stay consistent and searchable.  
-**Use 3–7 tags per item, all lowercase, hyphen-separated** (e.g., `tool-use`, `multi-agent`). Add a **Tags** column to tables where possible.
-
----
+How the hub is organized. We use concise tags (agent type, capability, environment/task, evaluation, tooling, domain) so you can filter and jump to related resources fast.
 
 ## Core facets
 
