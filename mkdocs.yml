@@ -28,6 +28,7 @@ extra_css:
   - assets/home.css
   - assets/newsletters.css
   - assets/banner.css?v=2
+  - assets/papers.css
 
 extra_javascript:
   - assets/newsletters.js
