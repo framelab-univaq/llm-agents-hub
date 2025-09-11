@@ -134,3 +134,24 @@
     grid-auto-columns: minmax(160px, 1fr);
   }
 }
+
+
+
+
+
+/* === Hide left sidebar (primary navigation) site-wide === */
+.md-sidebar--primary {
+  display: none;
+}
+
+/* Reflow layout so content expands; keep the right ToC visible */
+@media screen and (min-width: 76.25em) {
+  .md-main__inner {
+    grid-template-columns: 0 minmax(0, 1fr) var(--md-sidebar-width, 18rem);
+  }
+}
+
+/* (Optional) Hide the breadcrumb line above the title */
+.md-path { display: none; }
+
+
