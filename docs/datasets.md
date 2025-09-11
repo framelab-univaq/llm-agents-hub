@@ -1,8 +1,6 @@
 # Datasets
 
-Datasets and interactive environments commonly used to evaluate or train **LLM-based agents** (web navigation, software engineering, embodied tasks, tool use).
-
-> Keep descriptions to one line and link to the canonical site or GitHub.
+Datasets/environments used to train or test agents. The table lists Name, Scope/Task, and the Official source.
 
 | Name | Description | Link |
 |---|---|---|
