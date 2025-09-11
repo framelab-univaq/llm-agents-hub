@@ -1,8 +1,6 @@
-# Agent Systems
+# Agentic Systems
 
-Open-source **LLM-based agent systems** you can run end-to-end (autonomous loops, multi-tool workflows, coding agents, web agents, embodied agents).
-
-> Keep descriptions to one line and link to the canonical repo/site.
+Open-source agent systems and demos you can run. The table lists Name, What it does, and the GitHub link.
 
 | Name | Description | Link |
 |---|---|---|
