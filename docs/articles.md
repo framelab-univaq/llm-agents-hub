@@ -1,22 +1,103 @@
-# Papers
+#Research Papers
 
-| Title | Year | Venue | Notes |
-|---|---:|---|---|
-| Shi, Z., et al. *Learning to Use Tools via Cooperative and Interactive Agents*. arXiv preprint arXiv:2403.03031 | 2024 | arXiv | — |
-| Shinn, N., et al. *Reflexion: Language Agents with Verbal Reinforcement Learning*. arXiv preprint arXiv:2303.11366 | 2023 | arXiv | — |
-| Taubenfeld, A., et al. *Systematic Biases in LLM Simulations of Debates*. arXiv preprint arXiv:2402.04049 | 2024 | arXiv | — |
-| Tian, Y., et al. *Evil Geniuses: Delving into the Safety of LLM-based Agents*. arXiv preprint arXiv:2311.11855 | 2024 | arXiv | — |
-| Wang, Q., et al. *Rethinking the Bounds of LLM Reasoning: Are Multi-Agent Discussions the Key?* arXiv preprint arXiv:2402.18272 | 2024 | arXiv | — |
-| Wang, S., et al. *Benchmark Self-Evolving: A Multi-Agent Framework for Dynamic LLM Evaluation*. arXiv preprint arXiv:2402.11443 | 2024 | arXiv | — |
-| Wang, Z., et al. *Unleashing the Emergent Cognitive Synergy in Large Language Models: A Task-Solving Agent through Multi-Persona Self-Collaboration*. arXiv preprint arXiv:2307.05300 | 2024 | arXiv | — |
-| Wei, J., et al. *Chain-of-Thought Prompting Elicits Reasoning in Large Language Models*. In NeurIPS 2022 (Advances in Neural Information Processing Systems 35) | 2023 | NeurIPS | — |
-| Wu, Y., et al. *SmartPlay: A Benchmark for LLMs as Intelligent Agents*. In ICLR 2024 (12th Int. Conf. on Learning Representations) | 2024 | ICLR | — |
-| Yao, S., et al. *ReAct: Synergizing Reasoning and Acting in Language Models*. In ICLR 2023 (11th Int. Conf. on Learning Representations) | 2023 | ICLR | — |
-| Yao, S., et al. *Tree of Thoughts: Deliberate Problem Solving with Large Language Models*. In NeurIPS 2023 (Advances in Neural Information Processing Systems 36) | 2023 | NeurIPS | — |
-| Zhang, M., et al. *How Language Model Hallucinations Can Snowball*. arXiv preprint arXiv:2305.13534 | 2023 | arXiv | — |
-| Zhao, W., et al. *(In The) WildChat: 570K ChatGPT Interaction Logs in the Wild*. In ICLR 2024 (12th Int. Conf. on Learning Representations) | 2024 | ICLR | — |
-| Zhou, A., et al. *Language Agent Tree Search Unifies Reasoning, Acting and Planning in Language Models*. arXiv preprint arXiv:2310.04406 | 2023 | arXiv | — |
-| Zhu, K., et al. *DyVal: Dynamic Evaluation of Large Language Models for Reasoning Tasks*. arXiv preprint arXiv:2309.17167 | 2024 | arXiv | — |
-| Zhu, K., et al. *DyVal 2: Dynamic Evaluation of Large Language Models by Meta Probing Agents*. arXiv preprint arXiv:2402.14865 | 2024 | arXiv | — |
+> Curated references for agentic LLMs — reasoning, tool use, multi-agent systems, evaluation, and safety.
 
+<div class="papers-grid">
 
+  <article class="paper-card">
+    <h3>Learning to Use Tools via Cooperative and Interactive Agents</h3>
+    <div class="meta"><span class="badge year">2024</span><span class="badge venue">arXiv</span><code class="id">arXiv:2403.03031</code></div>
+    <p class="notes">Shi, Z., et al.</p>
+  </article>
+
+  <article class="paper-card">
+    <h3>Reflexion: Language Agents with Verbal Reinforcement Learning</h3>
+    <div class="meta"><span class="badge year">2023</span><span class="badge venue">arXiv</span><code class="id">arXiv:2303.11366</code></div>
+    <p class="notes">Shinn, N., et al.</p>
+  </article>
+
+  <article class="paper-card">
+    <h3>Systematic Biases in LLM Simulations of Debates</h3>
+    <div class="meta"><span class="badge year">2024</span><span class="badge venue">arXiv</span><code class="id">arXiv:2402.04049</code></div>
+    <p class="notes">Taubenfeld, A., et al.</p>
+  </article>
+
+  <article class="paper-card">
+    <h3>Evil Geniuses: Delving into the Safety of LLM-based Agents</h3>
+    <div class="meta"><span class="badge year">2024</span><span class="badge venue">arXiv</span><code class="id">arXiv:2311.11855</code></div>
+    <p class="notes">Tian, Y., et al.</p>
+  </article>
+
+  <article class="paper-card">
+    <h3>Rethinking the Bounds of LLM Reasoning: Are Multi-Agent Discussions the Key?</h3>
+    <div class="meta"><span class="badge year">2024</span><span class="badge venue">arXiv</span><code class="id">arXiv:2402.18272</code></div>
+    <p class="notes">Wang, Q., et al.</p>
+  </article>
+
+  <article class="paper-card">
+    <h3>Benchmark Self-Evolving: A Multi-Agent Framework for Dynamic LLM Evaluation</h3>
+    <div class="meta"><span class="badge year">2024</span><span class="badge venue">arXiv</span><code class="id">arXiv:2402.11443</code></div>
+    <p class="notes">Wang, S., et al.</p>
+  </article>
+
+  <article class="paper-card">
+    <h3>Unleashing the Emergent Cognitive Synergy… Multi-Persona Self-Collaboration</h3>
+    <div class="meta"><span class="badge year">2024</span><span class="badge venue">arXiv</span><code class="id">arXiv:2307.05300</code></div>
+    <p class="notes">Wang, Z., et al.</p>
+  </article>
+
+  <article class="paper-card">
+    <h3>Chain-of-Thought Prompting Elicits Reasoning in Large Language Models</h3>
+    <div class="meta"><span class="badge year">2023</span><span class="badge venue">NeurIPS ’22</span></div>
+    <p class="notes">Wei, J., et al.</p>
+  </article>
+
+  <article class="paper-card">
+    <h3>SmartPlay: A Benchmark for LLMs as Intelligent Agents</h3>
+    <div class="meta"><span class="badge year">2024</span><span class="badge venue">ICLR ’24</span></div>
+    <p class="notes">Wu, Y., et al.</p>
+  </article>
+
+  <article class="paper-card">
+    <h3>ReAct: Synergizing Reasoning and Acting in Language Models</h3>
+    <div class="meta"><span class="badge year">2023</span><span class="badge venue">ICLR ’23</span></div>
+    <p class="notes">Yao, S., et al.</p>
+  </article>
+
+  <article class="paper-card">
+    <h3>Tree of Thoughts: Deliberate Problem Solving with Large Language Models</h3>
+    <div class="meta"><span class="badge year">2023</span><span class="badge venue">NeurIPS ’23</span></div>
+    <p class="notes">Yao, S., et al.</p>
+  </article>
+
+  <article class="paper-card">
+    <h3>How Language Model Hallucinations Can Snowball</h3>
+    <div class="meta"><span class="badge year">2023</span><span class="badge venue">arXiv</span><code class="id">arXiv:2305.13534</code></div>
+    <p class="notes">Zhang, M., et al.</p>
+  </article>
+
+  <article class="paper-card">
+    <h3>(In The) WildChat: 570K ChatGPT Interaction Logs in the Wild</h3>
+    <div class="meta"><span class="badge year">2024</span><span class="badge venue">ICLR ’24</span></div>
+    <p class="notes">Zhao, W., et al.</p>
+  </article>
+
+  <article class="paper-card">
+    <h3>Language Agent Tree Search Unifies Reasoning, Acting and Planning</h3>
+    <div class="meta"><span class="badge year">2023</span><span class="badge venue">arXiv</span><code class="id">arXiv:2310.04406</code></div>
+    <p class="notes">Zhou, A., et al.</p>
+  </article>
+
+  <article class="paper-card">
+    <h3>DyVal: Dynamic Evaluation of Large Language Models for Reasoning Tasks</h3>
+    <div class="meta"><span class="badge year">2024</span><span class="badge venue">arXiv</span><code class="id">arXiv:2309.17167</code></div>
+    <p class="notes">Zhu, K., et al.</p>
+  </article>
+
+  <article class="paper-card">
+    <h3>DyVal 2: Dynamic Evaluation of LLMs by Meta Probing Agents</h3>
+    <div class="meta"><span class="badge year">2024</span><span class="badge venue">arXiv</span><code class="id">arXiv:2402.14865</code></div>
+    <p class="notes">Zhu, K., et al.</p>
+  </article>
+
+</div>
