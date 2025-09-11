@@ -1,5 +1,5 @@
 # Research Papers
-
+Peer-reviewed papers and surveys on agentic LLMs. The table lists Title, Year/Venue, a one-line Takeaway, and a Link (PDF/project).
 
 | Title | Year | Venue | Notes |
 |---|---:|---|---|
