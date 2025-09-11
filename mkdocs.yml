@@ -12,6 +12,9 @@ markdown_extensions:
   - tables
   - footnotes
   - def_list
+  - meta
+
+  
 
 theme:
   name: material
