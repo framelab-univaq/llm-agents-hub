@@ -24,7 +24,7 @@ hide:
 
 ---
 
-## About1
+## About
 
 **LLM Agents Hub** is prepared and maintained by the **Framelab Research Group**, part of the **SWEN (Software Engineering) Research Group** at the **University of L’Aquila**.  
 Our goal is to track high-signal, peer-reviewed and practitioner resources on agentic LLMs—planning, tool use, multi-agent systems, evaluation, and productionization.
