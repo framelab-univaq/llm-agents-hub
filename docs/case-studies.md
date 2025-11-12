@@ -6,12 +6,6 @@ Real-world deployments of **LLM-based agents** and assistants across consumer ap
 
 | Name | Description | Link |
 |---|---|---|
-
-
-
-
-
-
 | Klarna AI Assistant | 24/7 customer-service agent deployed across markets; handles a large share of support chats end-to-end. | https://www.klarna.com/international/press/klarna-ai-assistant-handles-two-thirds-of-customer-service-chats-in-its-first-month/ |
 | Duolingo Max | GPT-4–powered features (“Explain My Answer”, “Roleplay”) embedded in language learning. | https://blog.duolingo.com/duolingo-max/ |
 | Khan Academy — Khanmigo | AI tutor and teaching assistant piloted with teachers/students. | https://blog.khanacademy.org/harnessing-ai-so-that-all-students-benefit-a-nonprofit-approach-for-equal-access/ |
